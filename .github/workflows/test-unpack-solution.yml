@@ -7,6 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+      with:
+        lfs: true
     - uses: microsoft/powerplatform-actions/unpack-solution@0.5.0
       with:
         solution-file: out/solution.zip
